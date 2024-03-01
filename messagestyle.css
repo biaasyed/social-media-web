@@ -209,8 +209,8 @@ a:hover {
 }
 
 .main{
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     position: absolute;
     /* padding: 1rem; */
     margin-left: 102%;
@@ -221,19 +221,21 @@ a:hover {
     object-fit: cover;
     /* padding: 1rem; */
     /* display: block; */
-    width: 85vw;
+    width: 100vw;
     /* margin-left: auto; */
     height: 100vh;
     /* width: 1072px; */
     overflow-y: auto;
 }
 
-header{
+header {
     background-color: black;
     color: white;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 86%;
 }
 header .title{
     display: flex;
@@ -251,18 +253,25 @@ header h1{
         font-size: 20px;
         margin-left: 10px;
 }
-.container{
-    background-color:#ff8f8f;
+.container {
+    background-color: #ff8f8f;
     padding: 20px;
     display: flex;
+    width: 100%;
+    margin-top: 4%;
+    height: 100vh;
+    box-sizing: border-box;
+    /* position: fixed;*/
 }
-.userwindow{
+.userwindow {
     margin-right: 10px;
-    width: 300px;
+    width: 16%;
     background-color: #fcc5c5;
     padding: 15px 20px;
     border-radius: 10px;
     box-shadow: 15px 15px 60px black;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .userhead{
@@ -288,6 +297,9 @@ header h1{
     display: flex;
     justify-content: center;
 }
+.userlist{
+    height: auto;
+}
 .userslist p {
     font-size: 16px;
     font-weight: 500;
@@ -301,7 +313,7 @@ header h1{
 .userdetail p {
     font-size: 16px;
     color:black;
-    font-weight: 500;
+    font-weight: 800;
     padding: 1rem;
 }
 
@@ -345,12 +357,13 @@ header h1{
     object-fit: cover;
     border: 1px solid var(--black);
 }
-.chatwindow{
+.chatwindow {
     background-color: #fcc5c5;
     margin-right: 10px;
-    width: 100%;
+    width: 70%;
     border-radius: 10px;
     box-shadow: 15px 15px 60px black;
+    overflow-x: scroll;
 }
 .chats{
     min-height: 65vh;
@@ -359,7 +372,7 @@ header h1{
 .userjoin{
     font-size: 0.9rem;
     color: lightgrey;
-    background-color: black;
+    background-color: #ffb4b4;
     border-radius: 50px;
     width: max-content;
     padding: 0px 15px;
@@ -376,29 +389,40 @@ color: white;
     /* max-width: 400px; */
     margin-bottom: 3px;
     border-radius: 10px 50px 50px 10px;
-    width: max-content;
+    width:30%;
 }
-.message-outgoing{
-    color:white;
+.message-outgoing {
+    color: white;
     background-color: black;
     padding: 2px 15px;
     /* max-width: 400px; */
-    margin-left: 80%;
+    margin-left: 66%;
     margin-bottom: 3px;
     border-radius: 50px 10px 10px 50px;
-    width: max-content;
-}
-.userinput{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-.message p{
-    margin-top: 0px;
+    width: 30%;
 }
 .message-outgoing p{
-    margin-top: 0px;
+    margin-top: -7px;
+    font-size: 13px;
 }
+.userinput {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    /* margin-top: 17%; */
+    padding: 22px;
+}
+.message p {
+        margin-top: -7px;
+        font-size: 13px;
+    }
+    .userinput {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0px;
+        margin-top: 23%;
+        padding: 22px;
+    }
 .text{
     font-size: 16px;
     background-color:black;
