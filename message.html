@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Messages</title>
     <link rel="stylesheet" href="messagestyle.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <div class="sidebar">
     <div class="upper-container">
@@ -61,14 +62,20 @@
 </div>
 <div class="bottom-navbar">
     <div class="bottom-link">
-        <img src="home.png" style="height: 1rem; margin-right: 0.5rem" />
+        <a href="home.html">
+            <img src="home.png" style="height: 1rem; margin-right: 0.5rem" />
+        </a>
     </div>
 
     <div class="bottom-link">
-        <img src="explore.png" style="height: 1rem; margin-right: 0.5rem" />
+        <a href="explore.html">
+            <img src="explore.png" style="height: 1rem; margin-right: 0.5rem" />
+        </a>
     </div>
     <div class="bottom-link">
-        <img src="reels.png" style="height: 1rem; margin-right: 0.5rem" />
+        <a href="reels.html">
+            <img src="reels.png" style="height: 1rem; margin-right: 0.5rem" />
+        </a>
     </div>
 
     <div class="bottom-link">
@@ -77,11 +84,15 @@
         </label>
     </div>
     <div class="bottom-link">
-        <img src="message-circle.png" style="height: 1rem; margin-right: 0.5rem" />
+        <a href="message.html">
+            <img src="message-circle.png" style="height: 1rem; margin-right: 0.5rem" />
+        </a>
     </div>
     <div class="bottom-link">
         <div class="gradient-bottomorder">
-            <img src="user4.jpg" alt="Profile Picture" />
+            <a href="profile.html">
+                <img src="home.png" style="height: 1rem; margin-right: 0.5rem" />
+            </a>
         </div>
     </div>
 </div>
@@ -127,6 +138,38 @@
                         </div>
                         <p>Yumna </p>
                     </div>
+                    <div class="userdetail">
+                        <div class="profile">
+                            <div class="gradient-order">
+                                <img src="user4.jpg" alt="Profile Picture" />
+                            </div>
+                        </div>
+                        <p>ayeza_khan</p>
+                    </div>
+                    <div class="userdetail">
+                        <div class="profile">
+                            <div class="gradient-order">
+                                <img src="user3.jpg" alt="Profile Picture" />
+                            </div>
+                        </div>
+                        <p>mahrukh</p>
+                    </div>
+                    <div class="userdetail">
+                        <div class="profile">
+                            <div class="gradient-order">
+                                <img src="user2.jpg" alt="Profile Picture" />
+                            </div>
+                        </div>
+                        <p>ayesha_</p>
+                    </div>
+                    <div class="userdetail">
+                        <div class="profile">
+                            <div class="gradient-order">
+                                <img src="user.jpg" alt="Profile Picture" />
+                            </div>
+                        </div>
+                        <p>zaineb_</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,7 +194,7 @@
                         </div>
                         <p>Anonymous</p>
                     </div>
-                    <p>hello, how are you?</p>
+                    <p>Hey there! Have you checked out Chat Shack? It's this awesome social media website where you can chat, share updates, and even customize your profile!</p>
                 </div>
                 <div class="message-outgoing">
                     <div class="userdetail">
@@ -162,9 +205,53 @@
                         </div>
                         <p>Me</p>
                     </div>
-                    <p>i am fine</p>
+                    <p>Oh, hey John! No, I haven't heard about it. What's so special about Chat Shack?</p>
                 </div>
-                <div class="message">
+                <div class="message incoming">
+                    <div class="userdetail">
+                        <div class="profile">
+                            <div class="gradient-border">
+                                <img src="user1.jpg" alt="Profile Picture" />
+                            </div>
+                        </div>
+                        <p>Anonymous</p>
+                    </div>
+                    <p>Well, first off, the interface is sleek and user-friendly. You can easily navigate through different sections like messages, notifications, and your profile. Plus, it's got this cool feature where you can customize your profile with HTML, CSS, and JavaScript!</p>
+                </div>
+                <div class="message-outgoing">
+                    <div class="userdetail">
+                        <div class="profile">
+                            <div class="gradient-border">
+                                <img src="user4.jpg" alt="Profile Picture" />
+                            </div>
+                        </div>
+                        <p>Me</p>
+                    </div>
+                    <p>Nice! I'm always looking for new social platforms to connect with people. Thanks for the recommendation, John!</p>
+                </div>
+                <div class="message incoming">
+                    <div class="userdetail">
+                        <div class="profile">
+                            <div class="gradient-border">
+                                <img src="user1.jpg" alt="Profile Picture" />
+                            </div>
+                        </div>
+                        <p>Anonymous</p>
+                    </div>
+                    <p> No problem, Emma! Let me know when you join, and we can catch up there. It's always fun to have friends around on social media platforms.</p>
+                </div>
+                <div class="message-outgoing">
+                    <div class="userdetail">
+                        <div class="profile">
+                            <div class="gradient-border">
+                                <img src="user4.jpg" alt="Profile Picture" />
+                            </div>
+                        </div>
+                        <p>Me</p>
+                    </div>
+                    <p>Absolutely! Looking forward to it. Thanks again, John!</p>
+                </div>
+                <div class="message" id="messageBox" style="display: none;">
                     <div class="userdetail">
                         <div class="profile">
                             <div class="gradient-border">
@@ -177,22 +264,27 @@
                 </div>
             </div>
             <div class="userinput">
-                <input class="text" type="text" id=" tbuser" placeholder="Type your message.....">
+                <input class="text" type="text" id="tbuser" placeholder="Type your message.....">
                 <input id="btn1" class="bt" type="button" value="send">
             </div>
+            <script>
+                const txt1 = document.getElementById('tbuser');
+                const btn1 = document.getElementById('btn1');
+                const out1 = document.getElementById('output1');
+                const messageBox = document.getElementById('messageBox');
+
+                function fun1() {
+                    out1.innerHTML = txt1.value;
+                    messageBox.style.display = 'block'; // Display message box when text is entered
+                }
+
+                btn1.addEventListener('click', fun1);
+
+            </script>
+
         </div>
     </div>
 </div>
 </body>
-<script>
-    const txt1 = document.getElementById('tbuser');
-    const btn1 = document.getElementById('btn1');
-    const out1 = document.getElementById('out1');
-
-    function fun1(){
-        out1.innerHTML = txt1.value;
-    }
-    btn1.addEventListener('click',fun1);
-</script>
 
 </html>
