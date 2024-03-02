@@ -70,6 +70,16 @@
                 <button id="login-button" class="web-button"><a href="form.html">Log in</a> </button>
             </div>
         </div>
+        <div class="link">
+            <button type="button" class="btn" onclick="openPopup()">log out </button>
+            <div class="popup" id="popup">
+                <img src="https://cdn-icons-png.flaticon.com/128/4400/4400828.png">
+            <h2>Oh no! You are leaving.....</h2>
+            <p>Are you sure.....</p>
+            <button type="button" onclick="closePopup()"><a href="#">NO! Just Kidding!</a></button>
+            <button type="button" onclick="closePopup()"><a href="logout.html">Yes..Log Me Out</a></button>
+        </div>
+    </div>
     </div>
     </div>
     <div class="bottom-navbar">
@@ -111,7 +121,7 @@
     <div class="main-container">
         <div class="story-post-container">
             <div class="stories-container">
-                <div class="story">
+                <div class="story" onclick="showPicture()">
                     <div class="gradient-border">
                         <img src="user3.jpg" alt="Profile Picture" />
                     </div>
@@ -226,7 +236,7 @@
                         <div class="userdetail">
                             <div class="profile">
                                 <div class="gradient-order">
-                                    <img src="https://www.sosyncd.com/wp-content/uploads/2022/06/62-2.png"
+                                    <img src="user3.jpg"
                                         alt="Profile Picture" />
                                 </div>
                             </div>
@@ -235,7 +245,7 @@
                         <img src="dot.png" class="dot">
                     </div>
                     <div class="instaimage">
-                        <img src="user.jpg" class="cover">
+                        <img src="user3.jpg" class="cover">
                     </div>
                     <div class="actionbtns">
                         <div class="left">
@@ -252,7 +262,7 @@
                     <div class="addcomments">
                         <div class="userimage">
                             <div class="gradient-order">
-                                <img src="user.jpg"
+                                <img src="user4.jpg"
                                     alt="Profile Picture" />
                             </div>
                         </div>
@@ -267,7 +277,7 @@
                         <div class="userdetail">
                             <div class="profile">
                                 <div class="gradient-order">
-                                    <img src="https://www.sosyncd.com/wp-content/uploads/2022/06/62-2.png"
+                                    <img src="user4.jpg"
                                         alt="Profile Picture" />
                                 </div>
                             </div>
@@ -276,7 +286,7 @@
                         <img src="dot.png" class="dot">
                     </div>
                     <div class="instaimage">
-                        <img src="user.jpg" class="cover">
+                        <img src="user4.jpg" class="cover">
                     </div>
                     <div class="actionbtns">
                         <div class="left">
@@ -308,7 +318,7 @@
                         <div class="userdetail">
                             <div class="profile">
                                 <div class="gradient-order">
-                                    <img src="https://www.sosyncd.com/wp-content/uploads/2022/06/62-2.png"
+                                    <img src="user1.jpg"
                                         alt="Profile Picture" />
                                 </div>
                             </div>
@@ -317,48 +327,7 @@
                         <img src="dot.png" class="dot">
                     </div>
                     <div class="instaimage">
-                        <img src="user.jpg" class="cover">
-                    </div>
-                    <div class="actionbtns">
-                        <div class="left">
-                            <img src="heart.png" class="heart" onclick="likebutton()">
-                            <a href="#"><img src="message-circle.png" class="heart"></a>
-                        </div>
-                        <div class="right">
-                            <img src="bookmark.png" class="bookmark" onclick="savebutton()">
-                        </div>
-                    </div>
-                    <p class="likes">200 likes</p>
-                    <p class="message"><b>caption</b></p>
-                    <p class="comment">View all 45 comments</p>
-                    <div class="addcomments">
-                        <div class="userimage">
-                            <div class="gradient-order">
-                                <img src="user2.jpg"
-                                    alt="Profile Picture" />
-                            </div>
-                        </div>
-                        <input type="text" class="text" placeholder="Add a comment....">
-                    </div>
-                    <div class="postime">4 hours ago</div>
-                </div>
-            </div>
-            <div class="post">
-                <div class="card">
-                    <div class="top">
-                        <div class="userdetail">
-                            <div class="profile">
-                                <div class="gradient-order">
-                                    <img src="https://www.sosyncd.com/wp-content/uploads/2022/06/62-2.png"
-                                        alt="Profile Picture" />
-                                </div>
-                            </div>
-                            <p>username</p>
-                        </div>
-                        <img src="dot.png" class="dot">
-                    </div>
-                    <div class="instaimage">
-                        <img src="user.jpg" class="cover">
+                        <img src="user1.jpg" class="cover">
                     </div>
                     <div class="actionbtns">
                         <div class="left">
@@ -390,7 +359,48 @@
                         <div class="userdetail">
                             <div class="profile">
                                 <div class="gradient-order">
-                                    <img src="https://www.sosyncd.com/wp-content/uploads/2022/06/62-2.png"
+                                    <img src="user3.jpg"
+                                        alt="Profile Picture" />
+                                </div>
+                            </div>
+                            <p>username</p>
+                        </div>
+                        <img src="dot.png" class="dot">
+                    </div>
+                    <div class="instaimage">
+                        <img src="user3.jpg" class="cover">
+                    </div>
+                    <div class="actionbtns">
+                        <div class="left">
+                            <img src="heart.png" class="heart" onclick="likebutton()">
+                            <a href="#"><img src="message-circle.png" class="heart"></a>
+                        </div>
+                        <div class="right">
+                            <img src="bookmark.png" class="bookmark" onclick="savebutton()">
+                        </div>
+                    </div>
+                    <p class="likes">200 likes</p>
+                    <p class="message"><b>caption</b></p>
+                    <p class="comment">View all 45 comments</p>
+                    <div class="addcomments">
+                        <div class="userimage">
+                            <div class="gradient-order">
+                                <img src="user2.jpg"
+                                    alt="Profile Picture" />
+                            </div>
+                        </div>
+                        <input type="text" class="text" placeholder="Add a comment....">
+                    </div>
+                    <div class="postime">4 hours ago</div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="card">
+                    <div class="top">
+                        <div class="userdetail">
+                            <div class="profile">
+                                <div class="gradient-order">
+                                    <img src="user4.jpg"
                                         alt="Profile Picture" />
                                 </div>
                             </div>
@@ -651,6 +661,16 @@
         $("input[type='image']").click(function () {
             $("input[id='my_file']").click();
         });
+        </script>
+        <script>
+        let popup = document.getElementById("popup");
+        
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
     </script>
 </body>
 
