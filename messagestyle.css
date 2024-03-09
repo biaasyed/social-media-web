@@ -217,20 +217,19 @@ a {
       display: none;
     }
   }
-  .main{
-        box-shadow: 17px 28px 20px black;
-        position: fixed;
-        overflow-x: auto;
-        object-fit: cover;
-        width: 100vw;
-        /* width: calc(100vw - 4vw); */
-        height: 100vh;
-        overflow-y: auto;
-        margin-left: 12%;
-        margin-top: 0;
-        display: flex;
-        z-index: 1000;
-    }
+  .main {
+    position: fixed;
+    overflow-x: auto;
+    object-fit: cover;
+    /* width: calc(100vw - 12vw); */
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    margin-left: 12vw;
+    margin-top: 0;
+    display: flex;
+    z-index: 1000;
+  }
 
 header {
         background-color: black;
@@ -535,7 +534,14 @@ color: white;
         margin-left: 0;
         margin-top: 20px;
 }
-
+.userinput {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    /* margin-top: 23%; */
+     margin-bottom: 10%; 
+    padding: 22px;
+}
 .main {
     position: absolute;
     overflow-x: auto;
