@@ -206,6 +206,16 @@ a:hover {
   .suggestion{
     display: none;
   }
+  .video-container{
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 0;
+    position: fixed;
+  }
+  header{
+    display: none;
+  }
 }
 
 header {
@@ -243,25 +253,34 @@ h3 {
 
 .video-container {
   display: grid;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  /* position: absolute; */
-  width: 100%;
-  margin-left: 70%;
-  margin-top: 20%;
   max-width: 100%;
   overflow: scroll;
-  /* border: 2px solid #333; */
-  /* border-radius: 8px; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* display: inline; */
   background: #fcc5c5;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   padding: 20px;
 }
+
+/* For screens with a width of 600px or less */
+@media screen and (max-width: 600px) {
+  .video-container {
+    margin: 20% auto; /* Center horizontally and adjust margin-top */
+    overflow-x: hidden; /* Hide horizontal overflow on smaller screens */
+  }
+}
+
+/* For screens larger than 600px (e.g., laptops) */
+@media screen and (min-width: 601px){
+.video-container {
+    margin-left: 34%;
+    margin-top: 8%;
+    position: fixed;
+}
+}
+
+
 .reel {
   width: 450px;
   height: auto;
